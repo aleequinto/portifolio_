@@ -1,0 +1,382 @@
+
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Hedvig Letters Sans; 
+}
+
+@font-face {
+    font-family: Hedvig Letters Sans;
+    src: url(fonts/Hedvig\ Letters\ Sans.ttf);
+}
+
+body{
+    background-color:#F0F2CA;
+    height: 100vh;     
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #F6A135;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;     
+}
+
+.btn-contato button:hover{
+    background-color: #64ACA5;
+    box-shadow: 0px 0px 6px #4e857f;
+    transform: scale(1.05);
+} 
+
+h2.titulo{
+    color: #F6A135;
+    font-size: 32px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #64ACA5;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 'header > .interface' = procura as classes '.iterface' que estão dentro do header.*/
+
+header a{
+    color: #888888;
+    text-decoration: none;
+    display: inline-block;
+    transition: .15s;
+}
+
+header a:hover{
+    color: #F6A135;
+    
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* ESTILO DO TOPO DO SITE (MAIN) */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #F6A135;
+    font-size: 34px;
+    line-height: 40px;
+
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #64ACA5;
+    font-size: 64px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #f3b059e4;
+    margin: 40px 0;    
+}
+
+.topo-do-site .flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.topo-do-site .txt-topo-site {
+    flex: 1;
+}
+
+.topo-do-site .img-topo-site {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .topo-do-site .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .txt-topo-site,
+    .topo-do-site .img-topo-site {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* ESTILO DAS ESPECIALIDADE */
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: #f3b059e4;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;    
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #64aca583;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 58px;
+    color: #F6A135;
+    cursor: pointer;
+}
+
+.especialidades .especialidades-box i:hover{
+    transform: scale(1.05);
+    color: #64ACA5;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+/* ESTILO DO SOBRE */
+
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #F6A135;
+
+}
+
+.sobre .txt-sobre h2{
+
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+
+}
+
+.sobre .txt-sobre h2 span{
+
+    color: #64ACA5;
+    display: block;
+
+}
+
+.sobre .txt-sobre p{
+
+    margin: 10px 0;
+    text-align: justify;
+
+} 
+
+.sobre .img-sobre img{
+
+    border: black;
+    border-radius: 25px;
+
+}
+
+.btn-social button{
+
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #f3b059e4;
+    font-size: 25px;
+    margin: 0 3px;
+    transition: .2;
+
+}
+
+.btn-social button:hover{
+    transform: scale(1.05);
+    background-color: #64ACA5;
+    box-shadow: 0 0 8px #64aca583;
+    cursor: pointer;
+}
+
+/* ESTILO PORTIFÓLIO */
+
+section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #f6a23523;
+}
+
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;    
+}
+
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-color: #F6A135;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 6s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000046;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: "Hedvig Letters Sans";
+    font-weight: 600;
+    color: #54c2b5;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* ESTILHO DO FORMULÁRIO DE CONTATO */
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #f6a23534;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #64ACA5;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 500px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #F6A135;
+    color: #000;
+    font-family: "Hedvig Letters Sans";  
+    font-weight: 700; 
+    transition: .2s;
+}
+
+form .btn-enviar input:hover{
+    transform: scale(1.05);
+    background-color: #64ACA5;
+    box-shadow: 0 0 8px #64aca583;
+    cursor: pointer;
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #f6a23523;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #64ACA5;
+}
+
+footer .line-footer p i{
+    color:#64ACA5;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #F6A135;
+    text-decoration: none;
+    
+}
+
